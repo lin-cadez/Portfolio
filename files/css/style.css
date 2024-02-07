@@ -1,0 +1,127 @@
+.dark {
+    --text: #fbb476;
+    --text2: #ff783d;
+    --background: linear-gradient(125deg, #000, #01193b);
+    --item_background: rgba(3, 6, 17, 0.308);
+    --glow: 0 0 10px #b6eada;
+    --filter: invert(98%) sepia(50%) saturate(4354%) hue-rotate(300deg) brightness(97%) contrast(103%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+.slide a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--text)
+}
+
+.slide a::after {
+    content: "";
+    width: 90%;
+    margin-left: 5%;
+    transform: scaleX(0);
+    height: 2px;
+    border-radius: 1px;
+    bottom: 0;
+    left: 0;
+    background: var(--text);
+    transform-origin: bottom;
+    transition: transform .2s ease-out;
+    position: absolute;
+}
+
+.slide a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.color2 {
+    color: var(--text2) !important;
+}
+
+.contents {
+    margin-top: 55vh;
+}
+
+section {
+    margin-top: 20vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.title {
+    margin: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+p{
+    max-width: 800px;
+}
+
+.top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn .3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.top a img {
+    width: 100%;
+    height: 100%;
+    filter: var(--filter);
+}
+
+footer {
+    margin-top: 10vh;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.profile_img {
+    width: 15em;
+    border-radius: 50%;
+    margin: 20px;
+}
