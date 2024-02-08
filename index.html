@@ -1,224 +1,266 @@
 <!DOCTYPE html>
 <html lang="si">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="I am a computer science student at Vegova Ljubljana." />
+		<meta property="og:title" content="Lin Čadež" />
+		<meta
+			property="og:description"
+			content="I am a computer science student at Vegova Ljubljana." />
+		<meta property="og:url" content="cadez.eu" />
+		<meta
+			property="og:image"
+			content="https://cadez.eu/files/images/profile.jpg" />
+		<meta property="og:site_name" content="Lin Čadež" />
+		<meta property="og:locale" content="sl_SI" />
+		<meta name="theme-color" content="#317EFB" />
+		<link rel="shortcut icon" href="./files/images/profile.jpg" />
+		<title>Lin Čadež</title>
+		<link rel="icon" href="https://cadez.eu/files/images/profile.jpg" />
+		<link rel="manifest" href="files/manifest.json" />
+		<link rel="stylesheet" href="files/css/style.css" />
+		<link rel="stylesheet" href="files/css/header.css" />
+		<link rel="stylesheet" href="files/css/about.css" />
+		<link rel="stylesheet" href="files/css/skills.css" />
+		<link rel="stylesheet" href="files/css/projects.css" />
+		<link rel="stylesheet" href="files/css/friends.css" />
+		<link rel="stylesheet" href="files/css/contact.css" />
+	</head>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="I am a computer science student at Vegova Ljubljana." />
-	<meta property="og:title" content="Lin Čadež" />
-	<meta property="og:description" content="I am a computer science student at Vegova Ljubljana." />
-	<meta property="og:url" content="cadez.eu" />
-	<meta property="og:image" content="https://cadez.eu/files/images/profile.jpg" />
-	<meta property="og:site_name" content="Lin Čadež" />
-	<meta property="og:locale" content="sl_SI" />
-	<meta name="theme-color" content="#317EFB" />
-	<link rel="shortcut icon" href="./files/images/profile.jpg" />
-	<title>Lin Čadež</title>
-	<link rel="icon" href="https://cadez.eu/files/images/profile.jpg" />
-	<link rel="manifest" href="files/manifest.json" />
-	<link rel="stylesheet" href="files/css/style.css" />
-	<link rel="stylesheet" href="files/css/header.css" />
-	<link rel="stylesheet" href="files/css/about.css" />
-	<link rel="stylesheet" href="files/css/skills.css" />
-	<link rel="stylesheet" href="files/css/projects.css" />
-	<link rel="stylesheet" href="files/css/friends.css" />
-	<link rel="stylesheet" href="files/css/contact.css" />
-</head>
-
-<body class="dark">
-	<header>
-		<div class="navbar">
-			<div class="logo">
+	<body class="dark">
+		<header>
+			<div class="navbar">
+				<div class="logo"></div>
+				<nav class="slide nav">
+					<ul>
+						<li>
+							<a href="#about" class="nav-item">About me</a>
+						</li>
+						<li>
+							<a href="#skills" class="nav-item">Skills</a>
+						</li>
+						<li>
+							<a href="#projects" class="nav-item">Projects</a>
+						</li>
+						<li>
+							<a href="#friends" class="nav-item">Friends</a>
+						</li>
+						<li>
+							<a href="#contact" class="nav-item">Socials</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="burger" onclick="showNav()">
+					<img src="files/svg/burger.svg" alt="burger" />
+				</div>
 			</div>
-			<nav class="slide nav">
-				<ul>
-					<li>
-						<a href="#about" class="nav-item">About me</a>
-					</li>
-					<li>
-						<a href="#skills" class="nav-item">Skills</a>
-					</li>
-					<li>
-						<a href="#projects" class="nav-item">Projects</a>
-					</li>
-					<li>
-						<a href="#friends" class="nav-item">Friends</a>
-					</li>
-					<li>
-						<a href="#contact" class="nav-item">Socials</a>
-					</li>
-					
-				</ul>
-			</nav>
-			<div class="burger" onclick="showNav()">
-				<img src="files/svg/burger.svg" alt="burger" />
+			<div class="welcome">
+				<img
+					class="profile_img"
+					src="files/images/EDIT1.webp"
+					alt="Me" />
+				<div class="main">
+					<h1>Lin</h1>
+					<h1 class="color2">Čadež</h1>
+				</div>
+				<p>Computer science student</p>
 			</div>
+		</header>
+		<div class="top">
+			<a alt="link" href="#top" title="Go back to the top">
+				<img src="files/svg/up.svg" alt="up arrow" />
+			</a>
 		</div>
-		<div class="welcome">
-			<img class="profile_img" src="files/images/EDIT1.webp" alt="Me" />
-			<div class="main">
-
-				<h1>Lin</h1>
-				<h1 class="color2">Čadež</h1>
-
-			</div>
-			<p>Computer science student</p>
-
+		<div class="arrow">
+			<a href="#about" title="Go down">
+				<img src="files/svg/down-arrow.svg" alt="down arrow" />
+			</a>
 		</div>
-	</header>
-	<div class="top">
-		<a alt="link" href="#top" title="Go back to the top">
-			<img src="files/svg/up.svg" alt="up arrow" />
-		</a>
-	</div>
-	<div class="arrow">
-		<a href="#about" title="Go down">
-			<img src="files/svg/down-arrow.svg" alt="down arrow" />
-		</a>
-	</div>
-	<div class="contents">
-		<section id="about">
-			<div class="title color2">
-				<h2>About me</h2>
-			</div>
-			<div class="content">
+		<div class="contents">
+			<section id="about">
+				<div class="title color2">
+					<h2>About me</h2>
+				</div>
+				<div class="content">
+					<p>
+						🖥️ I am a computer science student at Vegova Ljubljana.
+						<br /><br />
+						🚀Currently working on software for Firefly model
+						rocket.
+						<br /><br />
+						🌱 Interested in radio-communication and C++
+						<br /><br />
+						🚁📡Certified A1/A3 drone pilot and HAM radio operator
+					</p>
+				</div>
+			</section>
+			<section id="skills">
+				<div class="title color2">
+					<h2>My skills</h2>
+				</div>
 				<p>
-					🖥️ I am a computer science student at Vegova Ljubljana.
-<br><br>
-🚀Currently working on software for Firefly model rocket.
-					<br><br>
-					🌱 Interested in radio-communication and C++
-					<br><br>
-					🚁📡Certified A1/A3 drone pilot and HAM radio operator
+					I'm skilled in building web apps using ReactJS and
+					ExpressJS, and I'm also able to colaborate using systems
+					based on Git. As a certified
+					<a
+						href="https://www.easa.europa.eu/en/domains/civil-drones/drones-regulatory-framework-background/open-category-civil-drones"
+						target="_blank"
+						>A1/A3 drone pilot</a
+					>
+					and licensed HAM radio operator (callsign: S59SI), I'm
+					passionate about aviation and communication. In my free
+					time, I produce videos or ads. Here is
+					<a
+						href="https://www.youtube.com/watch?v=mLy_RwytkvM&t=25s&ab_channel=BrLogScribers
+				"
+						>example</a
+					>
+					from one of my clients.
 				</p>
-			</div>
-		</section>
-		<section id="skills">
-			<div class="title color2">
-				<h2>My skills</h2>
-			</div>
-			<p>
-				I'm skilled in building web apps using ReactJS and ExpressJS,
-				and I'm also able to colaborate using systems based on Git. As a certified
-				<a href="https://www.easa.europa.eu/en/domains/civil-drones/drones-regulatory-framework-background/open-category-civil-drones"
-					target="_blank">A1/A3 drone pilot</a>
-					 and licensed HAM radio operator (callsign: S59SI),
-				I'm passionate about aviation and communication. In my free time,
-				I produce videos or ads. Here is   <a href="https://www.youtube.com/watch?v=mLy_RwytkvM&t=25s&ab_channel=BrLogScribers
-				">example</a> from one of my clients.
-				
-				
-			</p>
-			<p>Languages I use:</p>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>ReactJS</li>
-				<li>NodeJS</li>
-				<li>ExpressJS</li>
-				<li>Git</li>
-				<li>AVR Assembly</li>
-				<li>Python</li>
-			</ul>
-		</section>
-		<section id="projects">
-			<div class="title color2">
-				<h2>My projects</h2>
-			</div>
-			<div class="slider">
-				<div class="element">
-					<h2>KrokyPlus</h2>
-					<h3>I always forget to order school lunch for the following week. Therefore, I made AI to do that instead of me.</h3>
-					<a alt="link" href="https://krokyplus.si" target="_blank">
-						<img src="files/svg/web.svg" alt="web" />
-						Website
-					</a>
-					<a alt="link" href="https://github.com/lin-cadez/Kroky-Plus" target="_blank">
-						<img src="files/svg/github.svg" alt="githublol" />
-						Github
-					</a>
+				<p>Languages I use:</p>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>ReactJS</li>
+					<li>NodeJS</li>
+					<li>ExpressJS</li>
+					<li>Git</li>
+					<li>AVR Assembly</li>
+					<li>Python</li>
+				</ul>
+			</section>
+			<section id="projects">
+				<div class="title color2">
+					<h2>My projects</h2>
 				</div>
-				<div class="element">
-					<h2>Trex Game</h2>
-					<h3>A simple Trex game inspired by the Chrome browser's offline mode written in AVR assemlby</h3>
-					<a alt="link" href="https://github.com/lin-cadez/trex" target="_blank"><img
-							src="files/svg/github.svg" alt="githublol" />
-						Github
-					</a>
+				<div class="slider">
+					<div class="element">
+						<h2>KrokyPlus</h2>
+						<h3>
+							I always forget to order school lunch for the
+							following week. Therefore, I made AI to do that
+							instead of me.
+						</h3>
+						<a
+							alt="link"
+							href="https://krokyplus.si"
+							target="_blank">
+							<img src="files/svg/web.svg" alt="web" />
+							Website
+						</a>
+						<a
+							alt="link"
+							href="https://github.com/lin-cadez/Kroky-Plus"
+							target="_blank">
+							<img src="files/svg/github.svg" alt="githublol" />
+							Github
+						</a>
+					</div>
+					<div class="element">
+						<h2>Trex Game</h2>
+						<h3>
+							A simple Trex game inspired by the Chrome browser's
+							offline mode written in AVR assemlby
+						</h3>
+						<a
+							alt="link"
+							href="https://github.com/lin-cadez/trex"
+							target="_blank"
+							><img src="files/svg/github.svg" alt="githublol" />
+							Github
+						</a>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section id="friends">
-			<div class="title color2">
-				<h2>Friends on the web:</h2>
-			</div>
-			<ul>
-				<li>
-					<a href="https://skvarca.net/">Aljaž Škvarča</a>
-				</li>
-				<li>
-					<a href="https://majmohar.me">Maj Mohar</a>
-				</li>
-				<li>
-					<a href="https://cernetic.cc">Jaka Černetič</a>
-				</li>
-				<li>
-					<a href="https://gribanica.me">Andriy Gryban</a>
-				</li>
-				
-				<li>
-					<a href="https://aikenahac.com/">Aiken Tine Ahac</a>
-				</li>
-				<li>
-					<a href="https://jakakovac.si/">Jaka Kovač</a>
-				</li>
-				<li>
-					<a href="https://nejckrasevec.si/">Nejc Kraševec</a>
-				</li>
-				
-				<li>
-					<a href="https://jonpecar.me/">Jon Pečar</a>
-				</li>
-			</ul>
+			</section>
+			<div class="vodoravno">
+				<section id="friends">
+					<div class="title color2">
+						<h2>Friends on the web:</h2>
+					</div>
+					<ul>
+						<li>
+							<a href="https://skvarca.net/">Aljaž Škvarča</a>
+						</li>
+						<li>
+							<a href="https://majmohar.me">Maj Mohar</a>
+						</li>
+						<li>
+							<a href="https://cernetic.cc">Jaka Černetič</a>
+						</li>
+						<li>
+							<a href="https://gribanica.me">Andriy Gryban</a>
+						</li>
 
-		</section>
-		<section id="contact">
-			<div class="title color2">
-				<h2>Social media</h2>
-			</div>
-			</p>
-			<ul>
-				<li>
-					<a href="https://discordapp.com/users/989076547732402186" target="_blank">
-						<img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="discorda" />
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/lin-%C4%8Dade%C5%BE-7693142b0/" target="_blank">
-						<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-					</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/@lincadez" target="_blank">
-						<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube" />
-			
-					</a>
-				</li>
-				<li>
-					<a href="https://www.github.com/lin-cadez" target="_blank">
-						<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="youtube" />
-				
-					</a>
-				</li>
-			</ul>
-		</section>
-		<footer>
-			<p>© 2024 Lin Čadež | Design inspired by <a src="https://cernetic.cc/">cernetic.cc</a></p>
-			
-		</footer>
-	</div>
-	<script src="files/scripts/index.js"></script>
-</body>
+						<li>
+							<a href="https://aikenahac.com/">Aiken Tine Ahac</a>
+						</li>
+						<li>
+							<a href="https://jakakovac.si/">Jaka Kovač</a>
+						</li>
+						<li>
+							<a href="https://nejckrasevec.si/">Nejc Kraševec</a>
+						</li>
 
+						<li>
+							<a href="https://jonpecar.me/">Jon Pečar</a>
+						</li>
+					</ul>
+				</section>
+				<section id="contact">
+					<div class="title color2">
+						<h2>Social media</h2>
+					</div>
+					<ul>
+						<li>
+							<a
+								href="https://discordapp.com/users/989076547732402186"
+								target="_blank">
+								<img
+									src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white"
+									alt="discorda" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/lin-%C4%8Dade%C5%BE-7693142b0/"
+								target="_blank">
+								<img
+									src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+									alt="LinkedIn" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/@lincadez"
+								target="_blank">
+								<img
+									src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+									alt="Youtube" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.github.com/lin-cadez"
+								target="_blank">
+								<img
+									src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+									alt="youtube" />
+							</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<footer>
+				<p>
+					© 2024 Lin Čadež | Design inspired by
+					<a href="https://cernetic.cc/">cernetic.cc</a>
+				</p>
+			</footer>
+		</div>
+		<script src="files/scripts/index.js"></script>
+	</body>
 </html>
