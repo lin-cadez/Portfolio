@@ -73,7 +73,7 @@ header {
     cursor: pointer;
     rotate: 0deg;
     margin: 0;
-    padding: 0 !important;
+    padding: 0!important;
     height: 24px;
     width: 24px;
 }
@@ -98,7 +98,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10vh
+    margin-top: 11.5vh
 }
 
 .welcome .main {
@@ -120,12 +120,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     font-weight: 330
-}
-
-.profile_img {
-    width: 15em;
-    border-radius: 50%;
-    margin: 20px;
 }
 
 .arrow {
