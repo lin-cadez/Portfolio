@@ -22,7 +22,7 @@
 body {
     background: var(--background);
     color: var(--text);
-    
+
 }
 
 .slide a {
@@ -74,6 +74,7 @@ section {
     font-size: 25px;
     text-align: left;
 }
+
 .top {
     position: fixed;
     bottom: 40px;
@@ -157,10 +158,5 @@ footer {
 
 footer a {
     text-decoration: none;
-}
-
-.profile_img {
-    width: 15em;
-    border-radius: 50%;
-    margin: 20px;
+    color: var(--text);
 }
