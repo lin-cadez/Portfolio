@@ -123,9 +123,9 @@ header {
 }
 
 .profile_img {
-    width: 15em;
-    border-radius: 50%;
-    margin: 20px;
+    width: 20em;
+    border-radius: 5%;
+    margin: 10px;
 }
 
 .arrow {
