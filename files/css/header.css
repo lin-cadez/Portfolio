@@ -98,7 +98,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10vh
+    height: 100vh;
 }
 
 .welcome .main {
@@ -122,11 +122,6 @@ header {
     font-weight: 330
 }
 
-.profile_img {
-    width: 20em;
-    border-radius: 5%;
-    margin: 10px;
-}
 
 .arrow {
     position: absolute;
