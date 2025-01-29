@@ -33,6 +33,7 @@
   .hero {
     height: 100vh;
     display: flex;
+    font-size: larger;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,6 +50,13 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
+
+
+
+  .hero-title h1 {
+    font-size: 3.5rem;
+  }
+
   
   .accent {
     color: var(--text2);
