@@ -1,0 +1,36 @@
+{
+    "name": "Lin Čadež",
+    "short_name": "cadez.eu",
+    "start_url": "/",
+    "background_color": "#317EFB",
+    "theme_color": "#317EFB",
+    "description": "Lin Čadež's personal website",
+    "icons": [
+        {
+            "src": "./images/profile.jpg",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./images/profile.jpg",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./images/profile.jpg",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./images/profile.jpg",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "display": "fullscreen",
+    "orientation": "portrait"
+}

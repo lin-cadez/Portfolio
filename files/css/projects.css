@@ -1,0 +1,68 @@
+#projects p {
+    text-align: left;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    font-weight: 300;
+}
+
+#projects a {
+    text-decoration: none;
+    color: var(--text2);
+}
+
+.slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.slider .element {
+    background: var(--item_background);
+    background: rgba(0, 0, 0, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: var(--text);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    width: 100%;
+    }
+.slider .element h2 {
+    margin: 10px;
+    color: var(--text);
+    font-weight: 450;
+}
+
+.slider .element h3 {
+    margin: 10px 0;
+    color: var(--text2);
+    font-weight: 380;
+}
+
+.slider .element a {
+    text-decoration: none;
+    color: var(--text) !important;
+    margin: 20px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.slider .element a img {
+    width: 40px;
+    filter: var(--filter);
+}

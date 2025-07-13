@@ -1,0 +1,33 @@
+#contact ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 20px;
+    list-style: square;
+}
+
+#contact ul li {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+}
+
+#contact ul li a img {
+    height: 35px;
+    margin-right: 10px;
+}
+
+#contact p a {
+    text-decoration: none;
+    color: var(--text2);
+}

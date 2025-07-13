@@ -1,0 +1,44 @@
+#friends ul,
+.friends-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#friends ul li,
+.friends-container ul li {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.friends-container .friend-box {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.friends-container .friend-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.friends-container .friend-box a {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.friends-container .friend-box p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+    margin-top: 10px;
+}

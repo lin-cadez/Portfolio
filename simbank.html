@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/files/icons/simbankico.ico" type="image/x-icon">
+  <title>SIMBANK</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Proxima Nova', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .hero-img {
+      width: 100vw;
+      height: 100vh;
+      background: url('/files/images/img3.webp') center center/cover no-repeat;
+    }
+
+    .video-frame-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem;
+      background-color: #E5EFFF;
+    }
+
+    .video-frame-section h1 {
+      font-size: 2.5rem;
+      color: #1F1F1F;
+      margin-bottom: 2rem;
+    }
+
+    .video-frame {
+      width: 80vw;
+      max-width: 1200px;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .video-frame video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .fullscreen-image {
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-img {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 100%;
+  min-width: calc(100% + 400px); /* +200px on each side */
+  object-fit: cover;
+}
+
+.made-by-section {
+  background-color: #E5EFFF;
+  color: #1F1F1F;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.made-by-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  
+      font-family: 'Proxima Nova', sans-serif;
+}
+
+.made-by-section ul {
+  list-style:circle;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  
+      font-family: 'Proxima Nova', sans-serif;
+}
+
+.made-by-section li {
+  margin-bottom: 0.5rem;
+  
+      font-family: 'Proxima Nova', sans-serif;
+}
+
+
+ 
+
+  </style>
+</head>
+<body>
+  <section class="hero-img"></section>
+
+  
+  <section class="fullscreen-image" style="background-image: url('/files/images/img2.webp');"></section>
+
+  <section class="video-frame-section">
+    <h1>How to use it?</h1>
+    <div class="video-frame">
+      <video src="/files/images/background.mp4" autoplay muted loop></video>
+    </div>
+  </section>
+
+  
+  <section class="fullscreen-image" style="background-image: url('/files/images/img5.webp');"></section>
+  <section class="fullscreen-image" style="background-image: url('/files/images/img4.webp');"></section>
+  
+  <section class="fullscreen-image" style="background-image: url('/files/images/img1.webp');"></section>
+
+<footer class="footer">
+  <style>
+    .footer {
+      background-color: #E8EEFD;
+      color: #1F1F1F;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 1rem;
+    }
+
+    .footer a {
+      color: #1F1F1F;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .footer p {
+      margin: 0.5rem 0;
+    }
+  </style>
+  <p>
+    Made by
+    <a href="https://cadez.eu" target="_blank">Lin Čadež</a>,
+    <a href="https://majmohar.eu/" target="_blank">Maj Mohar</a>,
+    Marko Vidić,
+    and Anej Grojzdek
+  </p>
+  <p>
+    For our client: <a href="http://techin.lt/" target="_blank">techin.lt</a>
+  </p>
+  <p>&copy; 2025 SIMBANK</p>
+</footer>
+
+</body>
+<script>
+  window.addEventListener('load', () => {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+   
+  });
+ window.addEventListener('load', () => {
+    const width = window.innerWidth;
+   if (width < 1069) {
+        window.location.href = "/files/simbankPDF.pdf";
+      
+    }
+  });
+
+</script>
+
+
+</html>
