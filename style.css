@@ -1,6 +1,7 @@
 :root {
   --text: #fbb476;
   --text2: #ff783d;
+  --github-badge: var(--text2);
   --background: linear-gradient(125deg, #000, #01193b);
   --item-background: rgba(3, 6, 17, 0.308);
   --card-background: rgba(3, 6, 17, 0.5);
@@ -151,7 +152,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text);
+  color: var(--text2);
   text-decoration: none;
   padding: 0.5rem 0.8rem;
   border-radius: 0.5rem;
@@ -203,6 +204,11 @@ body {
   font-size: 0.8rem;
   transition: all 0.3s ease;
 }
+.client-badge:hover {
+  background: rgba(255, 120, 61, 0.25);
+  transform: translateY(-0  px);
+}
+
 
 .client-label {
   opacity: 0.7;
@@ -302,6 +308,14 @@ body {
 
 .social-links img:hover {
   opacity: 0.9;
+}
+
+/* Ensure SVG icons use brand color consistently */
+.social-links a svg,
+.project-link svg {
+  color: var(--github-badge);
+  fill: currentColor;
+  stroke: currentColor;
 }
 
 /* Footer */

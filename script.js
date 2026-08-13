@@ -36,22 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Add subtle animation to the client badge
-  const clientBadge = document.querySelector(".client-badge")
-
-  if (clientBadge) {
-    // Subtle pulse animation on hover
-    clientBadge.addEventListener("mouseenter", () => {
-      clientBadge.style.transform = "scale(1.05)"
-      clientBadge.style.background = "rgba(255, 120, 61, 0.25)"
-    })
-
-    clientBadge.addEventListener("mouseleave", () => {
-      clientBadge.style.transform = "scale(1)"
-      clientBadge.style.background = "rgba(255, 120, 61, 0.15)"
-    })
-  }
-
   // Animate stats on page load
   const statValues = document.querySelectorAll(".stat-value")
 
@@ -132,5 +116,51 @@ document.addEventListener("DOMContentLoaded", () => {
       card.style.boxShadow = "none"
     })
   })
-})
 
+  // Check main/backup links for projects that provide data-main/data-backup
+  function checkLinkAvailability(anchor, mainUrl, backupUrl, timeout = 4000) {
+    return new Promise((resolve) => {
+      let resolved = false
+      const img = new Image()
+
+      const timer = setTimeout(() => {
+        if (!resolved) {
+          resolved = true
+          resolve(false)
+        }
+      }, timeout)
+
+      img.onload = () => {
+        if (!resolved) {
+          resolved = true
+          clearTimeout(timer)
+          resolve(true)
+        }
+      }
+
+      img.onerror = () => {
+        if (!resolved) {
+          resolved = true
+          clearTimeout(timer)
+          resolve(false)
+        }
+      }
+
+      // Try to load a likely small resource from the main site
+      try {
+        const url = new URL(mainUrl)
+        img.src = url.origin + "/favicon.ico"
+      } catch (e) {
+        img.src = mainUrl
+      }
+    })
+  }
+
+  // Find all anchors with data-main and data-backup and update href accordingly
+  document.querySelectorAll('a[data-main][data-backup]').forEach(async (a) => {
+    const main = a.getAttribute('data-main')
+    const backup = a.getAttribute('data-backup')
+    const ok = await checkLinkAvailability(a, main, backup)
+    a.href = ok ? main : backup
+  })
+})
